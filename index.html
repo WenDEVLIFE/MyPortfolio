@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Frouen | Software and Web Developer Portfolio</title>
+   <link rel="icon" href="./pictures/java.png" type="image/x-icon">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyDy65gN2oM1ggCdVQV5cmIsyE8Cl+kK59" crossorigin="anonymous">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,24 +26,135 @@
     <!-- id is an attribute to name a tag uniquely -->
     <section id="landing" class="text-center mt-5">
       <h1>Full Stack Web Developer and Software Developer</h1>
-      <p>Hi! My name is Frouen, and I love building things from scratch.</p>
-      <img src="./pictures/wedvelife.png" id="profile" class="img-fluid">
+      <p>I'm a second year student from Philippine Women's College.</p>
+      <img src="./pictures/drip.jpg" id="profile" class="img-fluid">
       <a href="mailto:medinajrfrouen@gmail.com" class="btn btn-primary btn-lg mt-3">Let's Work Together</a>
     </section>
 
-    <!-- New section for Tech Stacks -->
-    <section id="landing" class="text-center mt-5">
-      <h2>👨‍💻 Tech Stacks</h2>
-      <ul>
-        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Backend:</strong> Java, Python,</li>
-        <li><strong>Database:</strong> MySQL</li>
-        <li><strong>Version Control:</strong> Git, GitHub</li>
-      </ul>
-    </section>
-  </div>
+    <!-- New section for Tech Stacks using Bootstrap cards -->
+ <div class="container">
+  <section id="tech-stacks" class="text-center mt-1">
+    <h2>👨‍💻 Tech Stacks</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img src="./pictures/webdev.png" class="card-img-top" alt="Frontend Image" style="max-height: 200px;">
+          <div class="card-body"> <!-- Add text-dark class here -->
+            <h5 class="card-title">Frontend</h5>
+            <p class="card-text text-dark"><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img src="./pictures/javapython.jpg" class="card-img-top" alt="Backend Image" style="max-height: 200px;">
+          <div class="card-body text-dark"> <!-- Add text-dark class here -->
+            <h5 class="card-title">Backend</h5>
+            <p class="card-text text-dark"><strong>Backend:</strong> Java, Python</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img src="./pictures/mysql.png" class="card-img-top" alt="Database Image" style="max-height: 200px;">
+          <div class="card-body text-dark"> <!-- Add text-dark class here -->
+            <h5 class="card-title">Database</h5>
+            <p class="card-text text-dark"><strong>Database:</strong> MySQL</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img src="./pictures/git.png" class="card-img-top" alt="Version Control Image" style="max-height: 200px;">
+          <div class="card-body text-dark"> <!-- Add text-dark class here -->
+            <h5 class="card-title">Version Control</h5>
+            <p class="card-text text-dark"><strong>Version Control:</strong> Git, GitHub</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <div class="container">
+  <section id="introduction" class="text-center mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Introduction</h2>
+        <img src="./pictures/wenwen.png" class="img-fluid mb-3" alt="Profile Image">
+        <p class="card-text text-dark">Hi! My name is Frouen, and I love building things from scratch. I am a Full Stack Web Developer and Software Developer with expertise in HTML, CSS, JavaScript, Java, Python, MySQL, Git, and GitHub. Let's work together to create something amazing!</p>
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+  <section id="introduction" class="text-center mt-5">
+    <div class="card">
+      <h1 class="card-title text-dark">My Featured Projects</h1>
+
+      <!-- First Project -->
+      <div class="card-body">
+        <h2 class="card-title text-dark">Event Criteria System</h2>
+        <img src="./pictures/pwceventsystem.png" class="img-fluid mb-3" alt="Project Image">
+        <p class="card-text text-dark">This is created to store and score the participants of the event. Also to store the value from the database by using MYSQL.</p>
+        <a href="https://github.com/WenDEVLIFE/Event-Application" class="btn btn-primary btn-lg mt-3">Download</a>
+      </div>
+
+      <!-- Second Project -->
+      <div class="card-body">
+        <h2 class="card-title text-dark">Java OS</h2>
+        <img src="./pictures/javaos.png" class="img-fluid mb-3" alt="Project Image">
+        <p class="card-text text-dark">This project is a simulation of my own operating system using java.</p>
+        <a href="https://github.com/WenDEVLIFE/JAVA-OS" class="btn btn-primary btn-lg mt-3">Download</a>
+      </div>
+
+
+		<div class="card-body">
+        <h2 class="card-title text-dark">Website Portfolio</h2>
+        <img src="./pictures/port.png" class="img-fluid mb-3" alt="Project Image">
+        <p class="card-text text-dark">This is my portfolio by combining html, css, bootstrap framework.</p>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section id="social-media" class="text-center mt-5">
+    <div class="card">
+      <h1 class="card-title text-dark">Connect with Me</h1>
+
+      <!-- GitHub -->
+      <div class="card-body">
+        <img src="./pictures/github_733609.png" alt="GitHub Icon" class="icon">
+        <h2 class="card-title text-dark">GitHub</h2>
+        <p class="card-text text-dark">Explore my projects on GitHub and stay updated!</p>
+        <a href="https://github.com/WenDEVLIFE" target="_blank" class="btn btn-primary btn-lg mt-3">GitHub Profile</a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="card-body">
+        <img src="./pictures/facebook_2504903.png" alt="Facebook Icon" class="icon">
+        <h2 class="card-title text-dark">Facebook</h2>
+        <p class="card-text text-dark">Connect with me on Facebook for updates and discussions.</p>
+        <a href="https://www.facebook.com/WenDevLife" target="_blank" class="btn btn-primary btn-lg mt-3">Facebook Profile</a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="card-body">
+        <img src="./pictures/linkedin_2504923.png" alt="LinkedIn Icon" class="icon">
+        <h2 class="card-title text-dark">LinkedIn</h2>
+        <p class="card-text text-dark">Let's connect on LinkedIn for professional networking.</p>
+        <a href="https://www.linkedin.com/in/frouen-medina-jr-a75a69287/" target="_blank" class="btn btn-primary btn-lg mt-3">LinkedIn Profile</a>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<h1>                                </h1>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+	</body>
+	</html>
