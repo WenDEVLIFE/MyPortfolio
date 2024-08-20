@@ -22,6 +22,31 @@
 <body>
   <!-- creates a wrapper/container for our layout -->
   <!-- class - an attribute used to name our container/div -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- a tag is used to create a hyperlink -->
+    <a class="navbar-brand" href="#">Frouen M. Medina Jr.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tech-stacks">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Contact</a>
+        </li>
+          </ul>
+    </div>
+  </nav>
   <div class="container">
     <!-- id is an attribute to name a tag uniquely -->
     <section id="landing" class="text-center mt-5">
@@ -34,8 +59,8 @@
     <!-- New section for Tech Stacks using Bootstrap cards -->
  <div class="container">
   <section id="tech-stacks" class="text-center mt-1">
-    <h2>👨‍💻 Tech Stacks</h2>
     <div class="row">
+      <h2>👨‍💻 Tech Stacks</h2>
       <div class="col-md-6">
         <div class="card h-100">
           <img src="./pictures/webdev.png" class="card-img-top" alt="Frontend Image" style="max-height: 200px;">
