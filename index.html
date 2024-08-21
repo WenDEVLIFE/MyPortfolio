@@ -23,13 +23,13 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Frouen M. Medina Jr.</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#landing">About</a>
                 </li>
                 <li class="nav-item">
@@ -47,34 +47,30 @@
     
     <!-- Landing Section -->
     <section id="landing" class="text-center">
-        <img src="./pictures/drip.jpg" id="profile" class="img-fluid">
+        <img src="./pictures/drip.jpg" id="profile" class="img-fluid rounded-circle">
         <h1>Freelance Software Developer</h1>
         <p>I'm a third-year student from Philippine Women's College.</p>  
         <a href="mailto:medinajrfrouen@gmail.com" class="btn btn-primary btn-lg mt-3">Let's Work Together</a>
     </section>
   
-<!-- About Me Section -->
-<section id="about" class="mt-5">
-  <div class="container">
-    <h2 class="text-center mb-4">🚀 About Me</h2>
- <section id="introduction" class="text-center mt-5">
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-6 d-flex align-items-center">
-          <div>
-            <p class="card-text text-dark">Hi! My name is Frouen, and I love building things from scratch. I am a Full Stack Web Developer and Software Developer with expertise in HTML, CSS, JavaScript, Java, Python, MySQL, Git, and GitHub. Let's work together to create something amazing!</p>
-          </div>
+    <!-- About Me Section -->
+    <section id="about" class="mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4  border-0 bg-transparent">🚀 About Me</h2>
+            <div id="introduction" class="card bg-transparent border-0">
+                <div class="card-body bg-transparent">
+                    <div class="row bg-transparent">
+                        <div class="col-md-6 d-flex align-items-center bg-transparent">
+                            <p class="card-text">Hi! My name is Frouen, and I love building things from scratch. I am a Full Stack Web Developer and Software Developer with expertise in HTML, CSS, JavaScript, Java, Python, MySQL, Git, and GitHub. Let's work together to create something amazing!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./pictures/wenwen.png" class="img-fluid" alt="Profile Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <img src="./pictures/wenwen.png" class="img-fluid mb-3" alt="Profile Image">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  </div>
-</section>
+    </section>
     
     <!-- Projects Section -->
     <section id="projects" class="mt-5">
@@ -118,132 +114,78 @@
         </div>
     </section>
 
-     <!-- Tech Stacks Section -->
-     <section id="tech-stacks" class="mt-5">
-      <div class="container">
-          <h2 class="text-center mb-4">👨‍💻 Tech Stacks</h2>
-          <div class="row g-4"  style="background-color: transparent;">
-              <!-- Java -->
-              <div class="col-md-4">
-                <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
-                    <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
-                    <div class="card-body" style="background-color: transparent !important;">
-                      <h5 class="card-title" style="color: aliceblue;">Java</h5>
-                        <p class="card-text">Explore my projects on GitHub and stay updated!</p>
+    <!-- Tech Stacks Section -->
+    <section id="tech-stacks" class="mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">👨‍💻 Tech Stacks</h2>
+            <div class="row g-4">
+                <!-- Example Stack Item -->
+                <div class="col-md-4">
+                    <div class="card text-center border-0 bg-transparent">
+                        <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Java</h5>
+                            <p class="card-text text-light">Explore my projects on GitHub and stay updated!</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Repeat similar blocks for other tech stacks -->
             </div>
-              <!-- Facebook -->
-              <div class="col-md-4">
-                <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
-                    <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
-                    <div class="card-body" style="background-color: transparent !important;">
-                        <h5 class="card-title" style="color: aliceblue;">Java</h5>
-                        <p class="card-text">Explore my projects on GitHub and stay updated!</p>
-                    </div>
+        </div>
+    </section>
+  
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h1 class="section-header">Contact</h1>
+        <div class="contact-wrapper">
+            <!-- Left contact page -->
+            <form id="contact-form" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" required>
                 </div>
-            </div>
-              <!-- LinkedIn -->
-              <div class="col-md-4">
-                <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
-                    <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
-                    <div class="card-body" style="background-color: transparent !important;">
-                      <h5 class="card-title" style="color: aliceblue;">Java</h5>
-                        <p class="card-text">Explore my projects on GitHub and stay updated!</p>
-                    </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" required>
                 </div>
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <i class="fa fa-paper-plane"></i> SEND
+                </button>
+            </form>
+            <!-- Direct Contact Information -->
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li class="list-item">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="contact-text place">Davao City, Philippines</span>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa fa-phone fa-2x"></i>
+                        <span class="contact-text phone"><a href="tel:1-212-555-5555">(63+) 991-209-3870</a></span>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa fa-envelope fa-2x"></i>
+                        <span class="contact-text gmail"><a href="mailto:medinajrfrouen@gmail.com">medinajrfrouen@gmail.com</a></span>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="social-media-list">
+                    <li><a href="https://github.com/WenDEVLIFE" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/WenDevLife" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/frouen-medina-jr-a75a69287/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+                <hr>
+                <div class="copyright">&copy; ALL RIGHTS RESERVED</div>
             </div>
-
-            <div class="col-md-4">
-              <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
-                  <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
-                  <div class="card-body" style="background-color: transparent !important;">
-                    <h5 class="card-title" style="color: aliceblue;">Java</h5>
-                      <p class="card-text">Explore my projects on GitHub and stay updated!</p>
-                  </div>
-              </div>
-          </div>
-
-          </div>
-      </div>
-  </section> 
-     <!-- Contact Form Section -->
-     <section id="contact">
-      <h1 class="section-header">Contact</h1>
-      <div class="contact-wrapper">
-          <!-- Left contact page -->
-          <form id="contact-form" class="form-horizontal" role="form">
-              <div class="form-group">
-                  <div class="col-sm-12">
-                      <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <div class="col-sm-12">
-                      <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                  </div>
-              </div>
-              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                  <div class="alt-send-button">
-                      <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                  </div>
-              </button>
-          </form>
-          <!-- Left contact page -->
-          <div class="direct-contact-container">
-              <ul class="contact-list">
-                  <li class="list-item">
-                      <i class="fa fa-map-marker fa-2x">
-                          <span class="contact-text place">Davao City, Philippines</span>
-                      </i>
-                  </li>
-                  <li class="list-item">
-                      <i class="fa fa-phone fa-2x">
-                          <span class="contact-text phone">
-                              <a href="tel:1-212-555-5555" title="Give me a call">(63+) 991-209-3870</a>
-                          </span>
-                      </i>
-                  </li>
-                  <li class="list-item">
-                      <i class="fa fa-envelope fa-2x">
-                          <span class="contact-text gmail">
-                              <a href="mailto:medinahrfrouen@gmail.com" title="Send me an email">medinajrfrouen@gmail.com</a>
-                          </span>
-                      </i>
-                  </li>
-              </ul>
-              <hr>
-              <ul class="social-media-list">
-                  <li>
-                      <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa-brands fa-facebook"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                      </a>
-                  </li>
-              </ul>
-              <hr>
-              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-          </div>
-      </div>
-  </section>
+        </div>
+    </section>
     
     <!-- Footer -->
-    <footer class="text-center text-white py-4" style="background-color: #222;">
-        <p>&copy; 2023 Frouen M. Medina Jr. All Rights Reserved.</p>
-        
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Frouen M. Medina Jr. | All rights reserved</p>
     </footer>
-    
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

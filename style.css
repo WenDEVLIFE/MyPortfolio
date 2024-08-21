@@ -112,6 +112,7 @@ body {
     list-style-type: none;
     margin-left: -30px;
     padding-right: 20px;
+    padding: 0;
   }
   
   .list-item {
@@ -150,22 +151,16 @@ body {
   
   
   /* Social Media Icons */
-  .social-media-list {
-    position: relative;
+ /* Social Media Icons */
+.social-media-list {
     font-size: 22px;
     text-align: center;
     width: 100%;
     margin: 0 auto;
     padding: 0;
-  }
-  
-  .social-media-list li a {
-    color: #0f0b0b !important; /* Adding !important to force the style */
 }
-.social-media-list li:hover a {
-    color: #be8c1f !important;
-}
-  .social-media-list li {
+
+.social-media-list li {
     position: relative; 
     display: inline-block;
     height: 60px;
@@ -173,40 +168,37 @@ body {
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
-    color: #fff;
     background-color: rgb(184, 82, 82);
     cursor: pointer; 
     transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
+    z-index: 10; /* Ensure icons are on top */
+}
+
+.social-media-list li a {
+    color: #fff !important;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
     line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:hover {
+    text-decoration: none;
+    pointer-events: auto; /* Ensure clicks are registered */
+}
+
+.social-media-list li:hover {
     background-color: #f8f8f8; 
-  }
-  
-  .social-media-list li:hover:after {
+}
+
+.social-media-list li:hover:after {
     opacity: 1;  
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-  }
-  
-  .social-media-list li:hover a {
+}
+
+.social-media-list li:hover a {
     color: #be8c1f;
-  }
-  
+}
+
   .copyright {
     font: 200 14px 'Oswald', sans-serif;
     color: #555;
@@ -280,7 +272,7 @@ body {
     }
     
   }
-  
+    
   @media screen and (max-width: 410px) {
     .send-button {
       width: 99%;
