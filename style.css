@@ -34,7 +34,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.project-image {
+  width: 100%; /* Make the image take up the full width of the card */
+  height: 600px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image scales properly */
+}
 /* Contact Form Styling */
 #contact {
     width: 100%;
