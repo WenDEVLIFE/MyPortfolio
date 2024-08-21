@@ -1,194 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frouen | Software and Web Developer Portfolio</title>
-   <link rel="icon" href="./pictures/java.png" type="image/x-icon">
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyDy65gN2oM1ggCdVQV5cmIsyE8Cl+kK59" crossorigin="anonymous">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- Meta and Title -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frouen | Software and Web Developer Portfolio</title>
+    <link rel="icon" href="./pictures/java.png" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-  <!-- creates a wrapper/container for our layout -->
-  <!-- class - an attribute used to name our container/div -->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- a tag is used to create a hyperlink -->
-    <a class="navbar-brand" href="#">Frouen M. Medina Jr.</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Frouen M. Medina Jr.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#landing">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tech-stacks">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Landing Section -->
+    <section id="landing" class="text-center">
+        <img src="./pictures/drip.jpg" id="profile" class="img-fluid">
+        <h1>Freelance Software Developer</h1>
+        <p>I'm a third-year student from Philippine Women's College.</p>  
+        <a href="mailto:medinajrfrouen@gmail.com" class="btn btn-primary btn-lg mt-3">Let's Work Together</a>
+    </section>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tech-stacks">Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Contact</a>
-        </li>
-          </ul>
-    </div>
-  </nav>
+<!-- About Me Section -->
+<section id="about" class="mt-5">
   <div class="container">
-    <!-- id is an attribute to name a tag uniquely -->
-    <section id="landing" class="text-center mt-5">
-      <img src="./pictures/drip.jpg" id="profile" class="img-fluid">
-      <h1>Freelance Software Developer</h1>
-      <p>I'm a third year student from Philippine Women's College.</p >  
-      <a href="mailto:medinajrfrouen@gmail.com" class="btn btn-primary btn-lg mt-3">Let's Work Together</a>
-    </section>
-
-    <!-- New section for Tech Stacks using Bootstrap cards -->
- <div class="container">
-  <section id="tech-stacks" class="text-center mt-1">
-    <div class="row">
-      <h2>👨‍💻 Tech Stacks</h2>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <img src="./pictures/webdev.png" class="card-img-top" alt="Frontend Image" style="max-height: 200px;">
-          <div class="card-body"> <!-- Add text-dark class here -->
-            <h5 class="card-title">Frontend</h5>
-            <p class="card-text text-dark"><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+    <h2 class="text-center mb-4">🚀 About Me</h2>
+ <section id="introduction" class="text-center mt-5">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <p class="card-text text-dark">Hi! My name is Frouen, and I love building things from scratch. I am a Full Stack Web Developer and Software Developer with expertise in HTML, CSS, JavaScript, Java, Python, MySQL, Git, and GitHub. Let's work together to create something amazing!</p>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <img src="./pictures/javapython.jpg" class="card-img-top" alt="Backend Image" style="max-height: 200px;">
-          <div class="card-body text-dark"> <!-- Add text-dark class here -->
-            <h5 class="card-title">Backend</h5>
-            <p class="card-text text-dark"><strong>Backend:</strong> Java, Python</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <img src="./pictures/mysql.png" class="card-img-top" alt="Database Image" style="max-height: 200px;">
-          <div class="card-body text-dark"> <!-- Add text-dark class here -->
-            <h5 class="card-title">Database</h5>
-            <p class="card-text text-dark"><strong>Database:</strong> MySQL</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <img src="./pictures/git.png" class="card-img-top" alt="Version Control Image" style="max-height: 200px;">
-          <div class="card-body text-dark"> <!-- Add text-dark class here -->
-            <h5 class="card-title">Version Control</h5>
-            <p class="card-text text-dark"><strong>Version Control:</strong> Git, GitHub</p>
-          </div>
+        <div class="col-md-6">
+          <img src="./pictures/wenwen.png" class="img-fluid mb-3" alt="Profile Image">
         </div>
       </div>
     </div>
-  </section>
-</div>
-  <div class="container">
-    <section id="introduction" class="text-center mt-5">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
-              <div>
-                <h2 class="card-title">About me</h2>
-                <p class="card-text text-dark">Hi! My name is Frouen, and I love building things from scratch. I am a Full Stack Web Developer and Software Developer with expertise in HTML, CSS, JavaScript, Java, Python, MySQL, Git, and GitHub. Let's work together to create something amazing!</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img src="./pictures/wenwen.png" class="img-fluid mb-3" alt="Profile Image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
+</section>
+  </div>
+</section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">🚀 My Featured Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./pictures/pwceventsystem.png" class="card-img-top" alt="Event Criteria System">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Criteria System</h5>
+                            <p class="card-text">This system stores and scores event participants, utilizing MySQL for database management.</p>
+                            <a href="https://github.com/WenDEVLIFE/Event-Application" class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./pictures/javaos.png" class="card-img-top" alt="Java OS">
+                        <div class="card-body">
+                            <h5 class="card-title">Java OS</h5>
+                            <p class="card-text">A simulation of an operating system built using Java.</p>
+                            <a href="https://github.com/WenDEVLIFE/JAVA-OS" class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./pictures/port.png" class="card-img-top" alt="Website Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title">Website Portfolio</h5>
+                            <p class="card-text">My personal portfolio built with HTML, CSS, and Bootstrap.</p>
+                            <a href="#" class="btn btn-primary">View Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
-  <section id="introduction" class="text-center mt-5">
-    <div class="card">
-      <h1 class="card-title text-dark">My Featured Projects</h1>
+     <!-- Tech Stacks Section -->
+     <section id="tech-stacks" class="mt-5">
+      <div class="container">
+          <h2 class="text-center mb-4">👨‍💻 Tech Stacks</h2>
+          <div class="row g-4"  style="background-color: transparent;">
+              <!-- Java -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
+                    <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
+                    <div class="card-body" style="background-color: transparent !important;">
+                      <h5 class="card-title" style="color: aliceblue;">Java</h5>
+                        <p class="card-text">Explore my projects on GitHub and stay updated!</p>
+                    </div>
+                </div>
+            </div>
+              <!-- Facebook -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
+                    <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
+                    <div class="card-body" style="background-color: transparent !important;">
+                        <h5 class="card-title" style="color: aliceblue;">Java</h5>
+                        <p class="card-text">Explore my projects on GitHub and stay updated!</p>
+                    </div>
+                </div>
+            </div>
+              <!-- LinkedIn -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
+                    <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
+                    <div class="card-body" style="background-color: transparent !important;">
+                      <h5 class="card-title" style="color: aliceblue;">Java</h5>
+                        <p class="card-text">Explore my projects on GitHub and stay updated!</p>
+                    </div>
+                </div>
+            </div>
 
-      <!-- First Project -->
-      <div class="card-body">
-        <h2 class="card-title text-dark">Event Criteria System</h2>
-        <img src="./pictures/pwceventsystem.png" class="img-fluid mb-3" alt="Project Image">
-        <p class="card-text text-dark">This is created to store and score the participants of the event. Also to store the value from the database by using MYSQL.</p>
-        <a href="https://github.com/WenDEVLIFE/Event-Application" class="btn btn-primary btn-lg mt-3">Download</a>
+            <div class="col-md-4">
+              <div class="card h-100 text-center" style="background-color: transparent !important; border: none;">
+                  <img src="./pictures/java.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 100px; background: transparent !important;">
+                  <div class="card-body" style="background-color: transparent !important;">
+                    <h5 class="card-title" style="color: aliceblue;">Java</h5>
+                      <p class="card-text">Explore my projects on GitHub and stay updated!</p>
+                  </div>
+              </div>
+          </div>
+
+          </div>
       </div>
-
-      <!-- Second Project -->
-      <div class="card-body">
-        <h2 class="card-title text-dark">Java OS</h2>
-        <img src="./pictures/javaos.png" class="img-fluid mb-3" alt="Project Image">
-        <p class="card-text text-dark">This project is a simulation of my own operating system using java.</p>
-        <a href="https://github.com/WenDEVLIFE/JAVA-OS" class="btn btn-primary btn-lg mt-3">Download</a>
+  </section> 
+     <!-- Contact Form Section -->
+     <section id="contact">
+      <h1 class="section-header">Contact</h1>
+      <div class="contact-wrapper">
+          <!-- Left contact page -->
+          <form id="contact-form" class="form-horizontal" role="form">
+              <div class="form-group">
+                  <div class="col-sm-12">
+                      <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-12">
+                      <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                  </div>
+              </div>
+              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                  <div class="alt-send-button">
+                      <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                  </div>
+              </button>
+          </form>
+          <!-- Left contact page -->
+          <div class="direct-contact-container">
+              <ul class="contact-list">
+                  <li class="list-item">
+                      <i class="fa fa-map-marker fa-2x">
+                          <span class="contact-text place">Davao City, Philippines</span>
+                      </i>
+                  </li>
+                  <li class="list-item">
+                      <i class="fa fa-phone fa-2x">
+                          <span class="contact-text phone">
+                              <a href="tel:1-212-555-5555" title="Give me a call">(63+) 991-209-3870</a>
+                          </span>
+                      </i>
+                  </li>
+                  <li class="list-item">
+                      <i class="fa fa-envelope fa-2x">
+                          <span class="contact-text gmail">
+                              <a href="mailto:medinahrfrouen@gmail.com" title="Send me an email">medinajrfrouen@gmail.com</a>
+                          </span>
+                      </i>
+                  </li>
+              </ul>
+              <hr>
+              <ul class="social-media-list">
+                  <li>
+                      <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                  </li>
+              </ul>
+              <hr>
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+          </div>
       </div>
-
-
-		<div class="card-body">
-        <h2 class="card-title text-dark">Website Portfolio</h2>
-        <img src="./pictures/port.png" class="img-fluid mb-3" alt="Project Image">
-        <p class="card-text text-dark">This is my portfolio by combining html, css, bootstrap framework.</p>
-      </div>
-
-    </div>
   </section>
-</div>
-
-<div class="container">
-  <section id="social-media" class="text-center mt-5">
-    <div class="card">
-      <h1 class="card-title text-dark">Connect with Me</h1>
-
-      <!-- GitHub -->
-      <div class="card-body">
-        <img src="./pictures/github_733609.png" alt="GitHub Icon" class="icon">
-        <h2 class="card-title text-dark">GitHub</h2>
-        <p class="card-text text-dark">Explore my projects on GitHub and stay updated!</p>
-        <a href="https://github.com/WenDEVLIFE" target="_blank" class="btn btn-primary btn-lg mt-3">GitHub Profile</a>
-      </div>
-
-      <!-- Facebook -->
-      <div class="card-body">
-        <img src="./pictures/facebook_2504903.png" alt="Facebook Icon" class="icon">
-        <h2 class="card-title text-dark">Facebook</h2>
-        <p class="card-text text-dark">Connect with me on Facebook for updates and discussions.</p>
-        <a href="https://www.facebook.com/WenDevLife" target="_blank" class="btn btn-primary btn-lg mt-3">Facebook Profile</a>
-      </div>
-
-      <!-- LinkedIn -->
-      <div class="card-body">
-        <img src="./pictures/linkedin_2504923.png" alt="LinkedIn Icon" class="icon">
-        <h2 class="card-title text-dark">LinkedIn</h2>
-        <p class="card-text text-dark">Let's connect on LinkedIn for professional networking.</p>
-        <a href="https://www.linkedin.com/in/frouen-medina-jr-a75a69287/" target="_blank" class="btn btn-primary btn-lg mt-3">LinkedIn Profile</a>
-      </div>
-
-    </div>
-  </section>
-</div>
-
-<h1>                                </h1>
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	</body>
-	</html>
+    
+    <!-- Footer -->
+    <footer class="text-center text-white py-4" style="background-color: #222;">
+        <p>&copy; 2023 Frouen M. Medina Jr. All Rights Reserved.</p>
+        
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
