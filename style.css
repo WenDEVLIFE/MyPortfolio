@@ -175,14 +175,14 @@ body {
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
-    background-color: rgb(184, 82, 82);
+    background-color: rgb(56, 36, 170);
     cursor: pointer; 
     transition: all .2s ease-in-out;
     z-index: 10; /* Ensure icons are on top */
 }
 
 .social-media-list li a {
-    color: #fff !important;
+    color: #0b77dd !important;
     display: inline-block;
     height: 100%;
     width: 100%;
