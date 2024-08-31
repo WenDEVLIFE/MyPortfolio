@@ -23,7 +23,7 @@
     
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #358EEF;">
-        <a class="navbar-brand" href="#" style="color: aliceblue;">Frouen M. Medina Jr.</a>
+        <a class="navbar-brand" href="#" style="color: aliceblue; margin-left: 50px;"> Frouen M. Medina Jr.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="#tech-stacks" style="color: aliceblue;">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" style="color: aliceblue;">Contact</a>
+                    <a class="nav-link" href="#contact" style="color: aliceblue; margin-right: auto;">Contact</a>
                 </li>
             </ul>
         </div>
@@ -289,6 +289,66 @@
             </div>
         </div>
     </section>
+
+    <!-- Slideshow container -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+    <h2 class="text-center mb-4">🗺️ Top 10 places i want to go</h2>
+    <div class="mySlides">
+        <img src="pictures/japan.jpg" style="width:100%" alt="Japan" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/china.jpg" style="width:100%" alt="People's Republic of China" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/russia.jpg" style="width:100%" alt="Russia Federation" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/usa.jpg" style="width:100%" alt="United States of America" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/singapore.jpg" style="width:100%" alt="Singapore" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/southkorea.jpg" style="width:100%" alt="South Korea" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/honkong.jpg" style="width:100%" alt="Honkong SAR" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/macau.jpg" style="width:100%" alt="Macau SAR" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/taiwan.jpg" style="width:100%" alt="Taiwan, Republic of China" class="project-image" >
+    </div>
+    <div class="mySlides">
+        <img src="pictures/malaysia.jpg" style="width:100%" alt="Malaysia" class="project-image" >
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+
   
     <!-- Contact Form Section -->
     <section id="contact">
@@ -343,5 +403,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
